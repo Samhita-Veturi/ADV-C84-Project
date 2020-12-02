@@ -78,17 +78,75 @@ function Keys2(){
 }
 
 function Down1(){
-
+   if(Car1_Y <=500){
+       Car1_Y = Car1_Y + 10;
+       UpBag();
+       UpC1();
+       UpC2();
+   }
 }
 
 function Down2(){
-
+    if(Car2_Y <=500){
+        Car2_Y = Car2_Y + 10;
+        UpBag();
+        UpC1();
+        UpC2();
+    }
 }
 
-function Right1(){
-
+function Right1 () {
+    if (Car1_X <= 500){
+        Car1_X = Car1_X + 10;
+        console.log("X and Y coordinates are: " + "X= " +Car1_X + " Y= " + RovY);
+        UpBag();
+        UpC1();
+        UpC2();
+    }
 }
 
-function Right2(){
+function Right2() {
+    if (Car2_X <= 500){
+        Car2_X = Car2_X + 10;
+        console.log("X and Y coordinates are: " + "X= " +Car2_X + " Y= " + Car2_Y);
+        UpBag();
+        UpC1();
+        UpC2();
+    }
+}
 
+function Up1() {
+    if(Car1_Y >=0){
+        Car1_Y = Car1_Y - 10;
+        UpBag();
+        UpC1();
+        UpC2();
+    }
+}
+
+function Up2() {
+    if(Car2_Y >=0){
+        Car2_Y = Car2_Y - 10;
+        UpBag();
+        UpC1();
+        UpC2();
+    }
+}
+
+function Left1() {
+    if(Car1_X >= 500){
+        Car1_X = Car1_X - 10;
+        UpBag();
+        UpC1();
+        UpC2();
+    }
+}
+
+function Left2() {
+    if(Car2_X >= 500){
+        Car2_X = Car2_X - 10;
+        UpBag();
+        UpC1();
+        UpC2();
+    }
 }
